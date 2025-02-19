@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        tpcBlack: "#000000",
+        tpcBlue: "#0293AD",
+        tpcLightBlue: "#88A4AA",
+        tpcLighterBlue: "#01B0CF",
       },
     },
   },

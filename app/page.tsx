@@ -1,4 +1,11 @@
+import Hero from "@/components/hero/Hero";
+import Navbar from "@/components/navbar/Navbar";
+
 export default function Home() {
-  return;
-  <div>Helo man</div>;
+  return (
+    <main className="relative h-[200vh] px-10">
+      <Navbar />
+      <Hero />
+    </main>
+  );
 }
