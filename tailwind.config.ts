@@ -16,6 +16,9 @@ export default {
         tpcLightBlue: "#88A4AA",
         tpcLighterBlue: "#01B0CF",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
+      },
     },
   },
   plugins: [],
