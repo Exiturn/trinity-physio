@@ -22,6 +22,12 @@ export default {
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
       },
+      backdropBlur: {
+        DEFAULT: "20px",
+      },
+      backdropBrightness: {
+        DEFAULT: "0.8",
+      },
     },
   },
   plugins: [],

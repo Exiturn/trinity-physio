@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
 
       <div
         id="MobileMenu"
-        className="fixed top-0 right-0 px-2 py-2 pointer-events-auto bg-transparent w-[100vw] h-[90vh] lg:hidden block z-[5] transition-all ease-[cubic-bezier(.16,1,.3,1)] translate-x-[0] will-change-transform"
+        className="fixed top-0 right-0 px-2 py-2 pointer-events-auto bg-transparent w-[100vw] h-[90vh] lg:hidden block z-[5] transition-all ease-[cubic-bezier(.16,1,.3,1)] translate-x-[100%] will-change-transform"
       >
         <div className="w-full h-full rounded-md bg-tpcBento px-10 pt-2 pb-5 flex flex-col justify-between">
           <figure className="flex">
@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
             <a
               target="_blank"
               href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
-              className="block md:hidden px-6 py-2 mt-10 bg-tpcDarkBlue text-white font-semibold rounded-md w-fit"
+              className="block md:hidden px-6 py-2 mt-10 bg-tpcDarkBlue text-white rounded-md w-fit"
             >
               Book Now
             </a>
@@ -152,9 +152,9 @@ const Navbar: React.FC = () => {
 
           <ul className="flex gap-3">
             {socialMediaIcons.map((icon) => (
-              <a key={icon.name} href={icon.href}>
+              <a target="_blank" key={icon.name} href={icon.href}>
                 <img
-                  className={icon.width ? `${icon.width}` : "w-[1.7em]"}
+                  className={icon.name == "TikTok" ? "w-[1.5em]" : "w-[1.7em]"}
                   src={icon.src}
                   alt={icon.name}
                 />
