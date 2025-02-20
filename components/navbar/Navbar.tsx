@@ -1,6 +1,6 @@
 "use client";
 
-import { navItems } from "@/constants";
+import { navItems, socialMediaIcons } from "@/constants";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
@@ -43,6 +43,17 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
+  useGSAP(() => {
+    const tl = gsap.timeline();
+    if (isOpen) {
+      tl.to("#MobileMenu", { opacity: 1, duration: 0.2 });
+      tl.to("#MobileMenu", { translateX: "0", duration: 0.75 }, 0.2);
+    } else if (!isOpen) {
+      tl.to("#MobileMenu", { opacity: 0, duration: 0.5 });
+      tl.set("#MobileMenu", { translateX: "100%" });
+    }
+  }, [isOpen]);
+
   const handleIconClick = () => {
     setIsOpen((prevState) => !prevState);
   };
@@ -77,7 +88,8 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
         <a
-          href=""
+          target="_blank"
+          href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
           className="hidden md:block px-6 py-2 bg-white text-black font-semibold rounded-md"
         >
           Book Now
@@ -105,6 +117,50 @@ const Navbar: React.FC = () => {
           className="w-[50px] h-[50px] mt-3 mr-3 rounded-full text-black p-3 bg-tpcBento pointer-events-auto flex lg:hidden z-10"
         >
           <MenuSvg />
+        </div>
+      </div>
+
+      <div
+        id="MobileMenu"
+        className="fixed top-0 right-0 px-2 py-2 pointer-events-auto bg-transparent w-[100vw] h-[90vh] lg:hidden block z-[5] transition-all ease-[cubic-bezier(.16,1,.3,1)] translate-x-[0] will-change-transform"
+      >
+        <div className="w-full h-full rounded-md bg-tpcBento px-10 pt-2 pb-5 flex flex-col justify-between">
+          <figure className="flex">
+            <img
+              className="min-w-[4em] max-w-[4em]"
+              src="/assets/tpc-logo.webp"
+              alt="Trinity Physiotherapy Clinic Logo"
+            />
+          </figure>
+
+          <ul>
+            {navItems.map((item) => (
+              <li className="py-2" key={`${item.name}_mobile`}>
+                <a className="text-3xl" href={item.href}>
+                  {item.name}
+                </a>
+              </li>
+            ))}
+            <a
+              target="_blank"
+              href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
+              className="block md:hidden px-6 py-2 mt-10 bg-tpcDarkBlue text-white font-semibold rounded-md w-fit"
+            >
+              Book Now
+            </a>
+          </ul>
+
+          <ul className="flex gap-3">
+            {socialMediaIcons.map((icon) => (
+              <a key={icon.name} href={icon.href}>
+                <img
+                  className={icon.width ? `${icon.width}` : "w-[1.7em]"}
+                  src={icon.src}
+                  alt={icon.name}
+                />
+              </a>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>
