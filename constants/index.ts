@@ -10,6 +10,10 @@ type socialMediaIconT = {
   width?: string;
 };
 
+type servicesBentoT = {
+  name: string;
+};
+
 export const navItems: navItemsT[] = [
   {
     name: "Home",
@@ -49,5 +53,26 @@ export const socialMediaIcons: socialMediaIconT[] = [
     src: "/assets/tt-icon.webp",
     href: "https://tiktok.com",
     width: "w-[1.5em]",
+  },
+];
+
+export const servicesBento: servicesBentoT[] = [
+  {
+    name: "Injury Assessment & Treatment",
+  },
+  {
+    name: "Musculoskeletal Physiotherapy",
+  },
+  {
+    name: "Post-Surgery Rehabilitation",
+  },
+  {
+    name: "Chronic Pain Management",
+  },
+  {
+    name: "Deep Tissue Massage",
+  },
+  {
+    name: "Home Visit Physiotherapy",
   },
 ];

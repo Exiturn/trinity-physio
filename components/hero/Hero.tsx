@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
   return (
     <div
       id="#Home"
-      className="w-full h-[100vh] flex flex-col justify-center items-center gap-y-[3em]"
+      className="w-full h-screen flex flex-col justify-center items-center gap-y-[3em]"
     >
       <div className="lg:w-[80vw] xl:w-[60vw] flex flex-col gap-y-[3em] mx-auto">
         <h1 className="text-white leading-[1em] text-[43px] lg:text-[56px] xl:text-[64px] text-wrap w-full">
@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
           </a>
         </div>
 
-        <h2 className="text-[14px] lg:text-[20px] md:w-[60%] leading-tight">
+        <h2 className="text-[16px] lg:text-[20px] md:w-[60%] leading-tight">
           Trinity Physiotherapy empowers people on their journey to recovery
           with evidence-based care guided by excellence, compassion, and
           innovation — so our clients can keep doing what they love.
