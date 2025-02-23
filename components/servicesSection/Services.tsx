@@ -20,8 +20,11 @@ const Services = () => {
             className={`px-2 lg:px-4 py-6 bg-tpcBento rounded-md text-center text-wrap text-[20px] lg:text-[24px] flex justify-center items-center transition-all ease-in-out duration-150 hover:bg-tpcBlue hover:text-tpcBento ${
               service.rowSpan
             } ${service.colSpan} ${
-              service.id == 6 && "col-span-full row-start-4 row-span-2"
-            } ${service.id == 5 && "col-span-4"}`}
+              service.id == 6 && "col-span-8 row-start-4 row-span-2"
+            } ${service.id == 5 && "col-span-4"} ${
+              service.id == 7 &&
+              "col-span-2 row-span-2 bg-white text-black font-semibold cursor-pointer hover:bg-tpcDarkBlue hover:text-white"
+            }`}
             key={service.name}
           >
             {service.name}

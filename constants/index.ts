@@ -91,4 +91,8 @@ export const servicesBento: servicesBentoT[] = [
     name: "Home Visit Physiotherapy",
     id: 6,
   },
+  {
+    name: "Book Now",
+    id: 7,
+  },
 ];
