@@ -12,6 +12,9 @@ type socialMediaIconT = {
 
 type servicesBentoT = {
   name: string;
+  colSpan?: string;
+  rowSpan?: string;
+  id: number;
 };
 
 export const navItems: navItemsT[] = [
@@ -59,20 +62,33 @@ export const socialMediaIcons: socialMediaIconT[] = [
 export const servicesBento: servicesBentoT[] = [
   {
     name: "Injury Assessment & Treatment",
+    id: 1,
+    colSpan: "col-span-3",
+    rowSpan: "row-span-3",
   },
   {
     name: "Musculoskeletal Physiotherapy",
+    id: 2,
+    colSpan: "col-span-2",
   },
   {
     name: "Post-Surgery Rehabilitation",
+    id: 3,
+    colSpan: "col-span-2",
   },
   {
     name: "Chronic Pain Management",
+    id: 4,
+    colSpan: "col-span-3",
+    rowSpan: "row-span-3",
   },
   {
     name: "Deep Tissue Massage",
+    id: 5,
+    rowSpan: "row-start-2 row-span-2",
   },
   {
     name: "Home Visit Physiotherapy",
+    id: 6,
   },
 ];
