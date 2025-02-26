@@ -17,6 +17,12 @@ type servicesBentoT = {
   id: number;
 };
 
+type reviewsT = {
+  name: string;
+  rating: number;
+  text: string;
+};
+
 export const navItems: navItemsT[] = [
   {
     name: "Home",
@@ -94,5 +100,33 @@ export const servicesBento: servicesBentoT[] = [
   {
     name: "Book Now",
     id: 7,
+  },
+];
+
+export const reviewCards: reviewsT[] = [
+  {
+    name: "Aisha Malik",
+    rating: 5,
+    text: "Wonderful experience at Trinity! The staff are knowledgeable, and I noticed a huge improvement after a few sessions. Highly recommend!",
+  },
+  {
+    name: "James O’Connor",
+    rating: 5,
+    text: "Top-notch service! My back pain is so much better thanks to the expert care I received. Best clinic I’ve been to.",
+  },
+  {
+    name: "Priya Patel",
+    rating: 5,
+    text: "Trinity’s support was amazing. Professional, kind, and tailored treatment. I’m now pain-free!",
+  },
+  {
+    name: "Kwame Mensah",
+    rating: 5,
+    text: "Fantastic experience! The team is warm and helped me recover from a sports injury quickly. Highly recommend!",
+  },
+  {
+    name: "Elena Rossi",
+    rating: 5,
+    text: "Great experience at Trinity! Friendly staff, clear guidance, and a comfortable atmosphere. Very grateful!",
   },
 ];
