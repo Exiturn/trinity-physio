@@ -3,10 +3,10 @@ import { servicesBento } from "@/constants";
 const Services = () => {
   return (
     <div className="pt-[12vh] pb-[6vh] flex flex-col md:items-center gap-y-3">
-      <h1 className="text-white leading-[1em] text-[32px] lg:text-[56px] xl:text-[64px] text-wrap w-full md:w-[70vw] lg:w-[50vw] md:text-center">
+      <h1 className="text-white leading-[1em] text-[32px] lg:text-[56px] xl:text-[64px] text-wrap w-full md:w-[70vw] lg:w-[70vw] md:text-center tracking-tighter transform">
         Our range of services to help you get{" "}
-        <span className="text-transparent bg-[length:100%] bg-clip-text bg-gradient-to-r from-tpcBlue via-tpcBlue to-white">
-          back to your best.
+        <span className="w-full text-transparent bg-gradient-to-r from-tpcBlue via-tpcBlue to-white transform skew-x-12 bg-clip-text italic">
+          back to your best.{" "}
         </span>
       </h1>
       <h2 className="text-tpcGray leading-tight md:text-center md:w-[50vw] lg:w-[30vw]">
@@ -26,7 +26,7 @@ const Services = () => {
             }
              ${service.id == 6 && "col-span-8 row-start-5 row-span-2"}  ${
               service.id == 7 &&
-              "col-span-2 bg-white text-black font-semibold cursor-pointer hover:bg-tpcDarkBlue hover:text-white"
+              "col-span-2 row-span-2 bg-white text-black font-semibold cursor-pointer hover:bg-tpcDarkBlue hover:text-white"
             }`}
             key={service.name}
           >

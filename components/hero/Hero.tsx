@@ -6,13 +6,12 @@ const Hero: React.FC = () => {
       id="#Home"
       className="w-full h-screen flex flex-col justify-center items-center gap-y-[3em]"
     >
-      <div className="lg:w-[80vw] xl:w-[60vw] flex flex-col gap-y-[3em] mx-auto">
-        <h1 className="text-white leading-[1em] text-[43px] lg:text-[56px] xl:text-[64px] text-wrap w-full">
+      <div className="lg:w-[90vw] xl:w-[70vw] flex flex-col gap-y-[3em] mx-auto">
+        <h1 className="text-white tracking-tighter leading-[1em] text-[43px] lg:text-[56px] xl:text-[64px] text-wrap w-full">
           Empowering your recovery through{" "}
-          <span className="text-transparent bg-[length:100%] bg-clip-text bg-gradient-to-r from-tpcBlue via-tpcBlue to-white">
-            Personalised Physiotherapy
+          <span className="text-transparent italic bg-[length:100%] bg-clip-text bg-gradient-to-r from-tpcBlue via-tpcBlue to-white">
+            Personalised Physiotherapy.{" "}
           </span>
-          .
         </h1>
 
         <div className="flex w-full gap-x-[1em]">
