@@ -51,17 +51,17 @@ export const socialMediaIcons: socialMediaIconT[] = [
   {
     name: "Facebook",
     src: "/assets/fb-icon.webp",
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/share/192z3A6j9s/?mibextid=wwXIfr",
   },
   {
     name: "Instagram",
     src: "/assets/ig-icon.webp",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/trinity_physio",
   },
   {
     name: "TikTok",
     src: "/assets/tt-icon.webp",
-    href: "https://tiktok.com",
+    href: "https://www.tiktok.com/@trinityphysio3",
     width: "w-[1.5em]",
   },
 ];
