@@ -25,19 +25,19 @@ const Testimonials = () => {
         <CarouselContent>
           {reviewCards.map((review) => (
             <CarouselItem
-              className="basis-[80vw] md:basis-[50vw]"
+              className="basis-[80vw] md:basis-[50vw] lg:basis-[35vw]"
               key={review.name}
             >
               <div className="p-1">
                 <Card className="h-[30vh] md:h-[35vh] bg-tpcBento border-none">
                   <CardContent className="flex flex-col items-start justify-between p-4 h-full">
-                    <p className="text-[18px] md:text-[24px] font-medium leading-tight">
+                    <p className="text-[16px] md:text-[24px] font-medium leading-tight text-wrap">
                       {"''"}
                       {review.text}
                       {"''"}
                     </p>
                     <div className="flex flex-col gap-y-1">
-                      <span className="text-[16px] lg:text-[20px] font-medium">
+                      <span className="text-[14px] lg:text-[20px] font-medium">
                         {review.name}
                       </span>
                       <div className="flex rounded-full bg-[#2d2d2d] px-2 py-1 w-fit">
