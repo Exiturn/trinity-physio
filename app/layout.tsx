@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased tracking-[-0.06em] font-sans text[14px]`}
+        className={`${inter.variable} antialiased tracking-[-0.06em] font-sans text[14px] text-white`}
       >
         <SmoothScrollWrapper>
           {children}

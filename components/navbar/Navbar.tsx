@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
 import { throttle } from "lodash";
-import handleMenuClick from "@/utils/handleMenuClick";
 import MenuSvg from "../menuSvg/MenuSvg";
 
 const Navbar: React.FC = () => {
@@ -124,7 +123,7 @@ const Navbar: React.FC = () => {
         id="MobileMenu"
         className="fixed top-0 right-0 px-2 py-2 pointer-events-auto bg-transparent w-[100vw] h-[90vh] lg:hidden block z-[5] transition-all ease-[cubic-bezier(.16,1,.3,1)] translate-x-[100%] will-change-transform"
       >
-        <div className="w-full h-full rounded-md bg-tpcBento px-10 pt-2 pb-5 flex flex-col justify-between">
+        <div className="w-full h-full rounded-md bg-tpcBento px-10 pt-2 pb-5 flex flex-col justify-between border-[0.35px] border-tpcGray">
           <figure className="flex">
             <img
               className="min-w-[4em] max-w-[4em]"

@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <div className="pt-[12vh] pb-[6vh] flex flex-col md:items-center gap-y-3">
       <h1 className="text-white leading-[1em] text-[42px] lg:text-[56px] xl:text-[64px] text-wrap w-full md:w-[70vw] lg:w-[70vw] md:text-center tracking-tighter transform">
-        Our range of services to help you get{" "}
+        Our range of services to help you get <br className="hidden xl:block" />
         <span className="text-transparent h-full bg-gradient-to-r from-tpcBlue via-tpcBlue to-white bg-clip-text">
           back to your best.{" "}
         </span>
