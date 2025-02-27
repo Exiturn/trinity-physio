@@ -60,6 +60,23 @@ const Testimonials = () => {
         <CarouselPrevious className="hidden md:flex text-black" />
         <CarouselNext className="hidden md:flex text-black" />
       </Carousel>
+
+      <div className="w-full md:w-[90vw] lg:w-[50vw] h-fit rounded-md bg-white p-2 text-black flex flex-col justify-center items-center text-center leading-[1.1] gap-2">
+        <h3 className="font-semibold text-[22px] md:w-[75%]">
+          Ready to start your journey to better movement and recovery?
+        </h3>
+        <h4 className="text-[14px] md:w-[50%]">
+          Get in touch with one of our experts to find out how we can help you
+          get back to your best.
+        </h4>
+        <a
+          target="_blank"
+          href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
+          className="px-6 py-2 bg-tpcBlue text-white font-semibold rounded-md text-sm"
+        >
+          Book Now
+        </a>
+      </div>
     </div>
   );
 };

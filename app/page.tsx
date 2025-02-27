@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Services from "@/components/servicesSection/Services";
 import Separator from "@/components/separator/Separator";
 import Testimonials from "@/components/testimonials/Testimonials";
+import About from "@/components/about/About";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <Services />
       <Separator />
       <Testimonials />
+      <Separator />
+      <About />
     </main>
   );
 }
