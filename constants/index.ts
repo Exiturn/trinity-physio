@@ -14,6 +14,7 @@ type servicesBentoT = {
   name: string;
   colSpan?: string;
   rowSpan?: string;
+  href?: string;
   id: number;
 };
 
@@ -100,6 +101,7 @@ export const servicesBento: servicesBentoT[] = [
   {
     name: "Book Now",
     id: 7,
+    href: "https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings",
   },
 ];
 

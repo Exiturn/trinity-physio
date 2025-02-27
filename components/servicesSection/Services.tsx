@@ -30,7 +30,13 @@ const Services = () => {
             }`}
             key={service.name}
           >
-            <span className="pointer-events-none">{service.name}</span>
+            {service.href ? (
+              <a target="_blank" href={service.href}>
+                {service.name}
+              </a>
+            ) : (
+              <span className="pointer-events-none">{service.name}</span>
+            )}
           </div>
         ))}
       </div>
