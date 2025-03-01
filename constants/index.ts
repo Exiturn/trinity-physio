@@ -24,6 +24,12 @@ type reviewsT = {
   text: string;
 };
 
+type expertsT = {
+  name: string;
+  picture: string;
+  description: string;
+};
+
 export const navItems: navItemsT[] = [
   {
     name: "Home",
@@ -130,5 +136,23 @@ export const reviewCards: reviewsT[] = [
     name: "Elena Rossi",
     rating: 5,
     text: "Great experience at Trinity! Friendly staff, clear guidance, and a comfortable atmosphere. Very grateful!",
+  },
+];
+
+export const expertCards: expertsT[] = [
+  {
+    name: "Kwazinkosi Mpofu",
+    picture: "/assets/tpc-kwazi.webp",
+    description: "Put description here.",
+  },
+  {
+    name: "Jeremie Temday",
+    picture: "/assets/tpc-jeremie.webp",
+    description: "Put description here.",
+  },
+  {
+    name: "Rich Atta",
+    picture: "/assets/tpc-rich.webp",
+    description: "Put description here.",
   },
 ];

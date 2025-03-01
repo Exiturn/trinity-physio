@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           </a>
           <a
             target="_blank"
-            href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
+            href=""
             className="px-6 py-2 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100 text-sm"
           >
             About Us

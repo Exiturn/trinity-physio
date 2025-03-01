@@ -17,10 +17,12 @@ const Testimonials = () => {
           our work.
         </span>
       </h1>
+
       <h2 className="text-tpcGray leading-tight md:text-center md:w-[50vw] lg:w-[30vw]">
         Don’t just take our word for it, have a look at what our past clients
         have written about their experience with us:
       </h2>
+
       <Carousel className="w-full md:w-[70vw]">
         <CarouselContent>
           {reviewCards.map((review) => (
@@ -61,7 +63,7 @@ const Testimonials = () => {
         <CarouselNext className="hidden md:flex text-black" />
       </Carousel>
 
-      <div className="w-full md:w-[90vw] lg:w-[50vw] h-fit rounded-md bg-white p-2 text-black flex flex-col justify-center items-center text-center leading-[1.1] gap-2">
+      <div className="w-full md:w-[90vw] lg:w-[50vw] h-fit rounded-md bg-white p-4 text-black flex flex-col justify-center items-center text-center leading-[1.1] gap-2">
         <h3 className="font-semibold text-[22px] md:w-[75%]">
           Ready to start your journey to better movement and recovery?
         </h3>
