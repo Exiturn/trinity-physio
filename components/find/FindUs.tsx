@@ -2,7 +2,10 @@ import React from "react";
 
 const FindUs = () => {
   return (
-    <div className="pt-[12vh] pb-[6vh] px-10 flex flex-col md:items-center gap-y-3">
+    <div
+      id="Findus"
+      className="pt-[12vh] pb-[6vh] lg:px-10 flex flex-col md:items-center gap-y-3"
+    >
       <h1 className="text-white leading-[1em] text-[42px] lg:text-[56px] xl:text-[64px] text-wrap w-full md:w-[70vw] lg:w-[70vw] md:text-center tracking-tighter transform">
         How to find us.
       </h1>

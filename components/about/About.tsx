@@ -4,7 +4,10 @@ import Separator from "../separator/Separator";
 
 const About = () => {
   return (
-    <div className="pt-[12vh] pb-[6vh] flex flex-col md:items-center gap-y-3">
+    <div
+      id="About"
+      className="pt-[12vh] pb-[6vh] flex flex-col md:items-center gap-y-3"
+    >
       <h1 className="text-white leading-[1em] text-[42px] lg:text-[56px] xl:text-[64px] text-wrap w-full md:w-[70vw] lg:w-[70vw] md:text-center tracking-tighter transform">
         Meet our{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-tpcBlue via-tpcBlue to-white">
@@ -23,7 +26,7 @@ const About = () => {
           >
             <CardContent className="p-0">
               <img
-                className="w-[80vw] md:w-[40vw] lg:w-[80vw] xl:min-w-[20vw] xl:max-w-[20vw] h-[50vh] rounded-md"
+                className="w-[80vw] md:w-[40vw] lg:w-[80vw] xl:min-w-[18vw] xl:max-w-[18vw] h-[50vh] rounded-md"
                 src={expert.picture}
                 alt={expert.picture}
               />
@@ -52,7 +55,7 @@ const About = () => {
             className="w-full md:w-[40vw] lg:w-[35vw] xl:h-[20vw] border-none bg-tpcBento flex flex-col items-center gap-5 shadow-none"
           >
             <CardContent className="py-5">
-              <h1 className="h-[100px] xl:w-[70%] leading-tight text-[32px] text-transparent bg-clip-text bg-gradient-to-r from-tpcBlue via-tpcBlue to-white">
+              <h1 className="h-[100px] lg:h-[75px] xl:h-[50px] xl:w-[100%] leading-tight text-[32px] text-transparent bg-clip-text bg-gradient-to-r from-tpcBlue via-tpcBlue to-white">
                 {card.title}
               </h1>
               <p className="pt-2 leading-tight text-[16px] xl:text-[20px]">

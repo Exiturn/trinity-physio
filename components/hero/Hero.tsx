@@ -3,7 +3,7 @@ import { socialMediaIcons } from "@/constants";
 const Hero: React.FC = () => {
   return (
     <div
-      id="#Home"
+      id="Home"
       className="w-full h-screen flex flex-col justify-center items-center gap-y-[3em]"
     >
       <div className="lg:w-[90vw] xl:w-[70vw] flex flex-col gap-y-[3em] mx-auto">

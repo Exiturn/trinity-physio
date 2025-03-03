@@ -10,7 +10,10 @@ import {
 
 const Testimonials = () => {
   return (
-    <div className="pt-[12vh] pb-[6vh] flex flex-col md:items-center gap-y-3">
+    <div
+      id="Reviews"
+      className="pt-[12vh] pb-[6vh] flex flex-col md:items-center gap-y-3"
+    >
       <h1 className="text-white leading-[1em] text-[42px] lg:text-[56px] xl:text-[64px] text-wrap w-full md:w-[70vw] lg:w-[70vw] md:text-center tracking-tighter transform">
         What our clients think about <br className="hidden lg:block" />
         <span className="text-transparent bg-[length:100%] bg-clip-text bg-gradient-to-r from-tpcBlue via-tpcBlue to-white">

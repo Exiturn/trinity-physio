@@ -46,7 +46,7 @@ export const navItems: navItemsT[] = [
   },
   {
     name: "Testimonials",
-    href: "#Testimonials",
+    href: "#Reviews",
   },
   {
     name: "About",
@@ -54,7 +54,7 @@ export const navItems: navItemsT[] = [
   },
   {
     name: "Find Us",
-    href: "#Find",
+    href: "#Findus",
   },
 ];
 

@@ -20,10 +20,7 @@ const Navbar: React.FC = () => {
       const currentScrollY = window.scrollY;
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          if (
-            currentScrollY < lastScrollY &&
-            currentScrollY < window.innerHeight
-          ) {
+          if (currentScrollY < lastScrollY) {
             gsap.set("#DesktopNavbar", { translateY: 0 });
           } else if (currentScrollY > lastScrollY) {
             gsap.set("#DesktopNavbar", { translateY: negativeYDesktop - 20 });
@@ -82,7 +79,7 @@ const Navbar: React.FC = () => {
         <ul className="hidden lg:flex gap-7 justify-center h-full">
           {navItems.map((item) => (
             <li className="cursor-pointer hover:underline" key={item.name}>
-              {item.name}
+              <a href={item.href}>{item.name}</a>
             </li>
           ))}
         </ul>
