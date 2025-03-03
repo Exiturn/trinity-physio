@@ -30,6 +30,11 @@ type expertsT = {
   description: string;
 };
 
+type aboutCardT = {
+  title: string;
+  description: string;
+};
+
 export const navItems: navItemsT[] = [
   {
     name: "Home",
@@ -154,5 +159,18 @@ export const expertCards: expertsT[] = [
     name: "Rich Atta",
     picture: "/assets/tpc-rich.webp",
     description: "Put description here.",
+  },
+];
+
+export const aboutCards: aboutCardT[] = [
+  {
+    title: "Evidence-based Treatments",
+    description:
+      "Welcome to Trinity Physiotherapy Clinic, where your journey to optimal health and mobility begins. Located in the heart of Manchester, our dedicated team of experienced physiotherapists is committed to providing personalised, evidence-based treatments tailored to your unique needs.",
+  },
+  {
+    title: "Excellence & Innovation",
+    description:
+      "Guided by our core values of excellence, compassion, and innovation, we are committed to providing evidence-based physiotherapy solutions that restore function and enhance movement. Explore our range of services, including home visit physiotherapy for your convenience, and discover how we can help you move better and feel stronger.",
   },
 ];

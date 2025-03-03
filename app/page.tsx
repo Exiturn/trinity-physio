@@ -4,6 +4,7 @@ import Services from "@/components/servicesSection/Services";
 import Separator from "@/components/separator/Separator";
 import Testimonials from "@/components/testimonials/Testimonials";
 import About from "@/components/about/About";
+import FindUs from "@/components/find/FindUs";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <Testimonials />
       <Separator />
       <About />
+      <Separator />
+      <FindUs />
     </main>
   );
 }

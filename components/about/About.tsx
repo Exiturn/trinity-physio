@@ -1,4 +1,4 @@
-import { expertCards } from "@/constants";
+import { expertCards, aboutCards } from "@/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import Separator from "../separator/Separator";
 
@@ -23,7 +23,7 @@ const About = () => {
           >
             <CardContent className="p-0">
               <img
-                className="w-[80vw] md:w-[35vw] lg:w-[80vw] xl:min-w-[20vw] xl:max-w-[20vw] h-[50vh] rounded-md"
+                className="w-[80vw] md:w-[40vw] lg:w-[80vw] xl:min-w-[20vw] xl:max-w-[20vw] h-[50vh] rounded-md"
                 src={expert.picture}
                 alt={expert.picture}
               />
@@ -45,6 +45,23 @@ const About = () => {
         Find out more about who we are here at Trinity Physiotherapy Clinic and
         what motivates us to bring out the best in you.
       </h2>
+      <div className="flex flex-col md:flex-row gap-10 pt-10">
+        {aboutCards.map((card) => (
+          <Card
+            key={card.title}
+            className="w-full md:w-[40vw] lg:w-[35vw] xl:h-[20vw] border-none bg-tpcBento flex flex-col items-center gap-5 shadow-none"
+          >
+            <CardContent className="py-5">
+              <h1 className="h-[100px] xl:w-[70%] leading-tight text-[32px] text-transparent bg-clip-text bg-gradient-to-r from-tpcBlue via-tpcBlue to-white">
+                {card.title}
+              </h1>
+              <p className="pt-2 leading-tight text-[16px] xl:text-[20px]">
+                {card.description}
+              </p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 };
