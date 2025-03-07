@@ -20,6 +20,7 @@ export default {
         tpcDarkBlue: "#014753",
         tpcGray: "#989898",
         tpcBento: "#1F1E1E",
+        tpcNav: "#151414",
         card: {},
         popover: {},
         primary: {},

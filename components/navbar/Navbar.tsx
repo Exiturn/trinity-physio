@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
       <div
         id="DesktopNavbar"
         ref={navRefDesktop}
-        className="w-full hidden lg:flex justify-between items-center translate-y-[0] transition-all duration-300 ease-in-out will-change-transform"
+        className="w-full hidden lg:flex justify-between items-center bg-tpcNav px-4 py-1 translate-y-[0] transition-all duration-300 ease-in-out will-change-transform rounded-md"
       >
         <figure className="flex">
           <img
