@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from "next/link";
 
 const Testimonials = () => {
   return (
@@ -74,13 +75,12 @@ const Testimonials = () => {
           Get in touch with one of our experts to find out how we can help you
           get back to your best.
         </h4>
-        <a
-          target="_blank"
-          href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
-          className="px-6 py-2 bg-tpcBlue text-white font-semibold rounded-md text-sm"
+        <Link
+          className="px-6 py-2 bg-tpcBlue text-white font-semibold rounded-md text-sm transition-all ease-in-out duration-150 hover:bg-tpcDarkBlue"
+          href={"/contact"}
         >
-          Book Now
-        </a>
+          Get In Touch
+        </Link>
       </div>
     </div>
   );

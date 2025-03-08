@@ -18,14 +18,13 @@ const Hero: React.FC = () => {
           <a
             target="_blank"
             href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
-            className="px-6 py-2 bg-white text-black font-semibold rounded-md text-sm"
+            className="px-6 py-2 bg-white text-black font-semibold rounded-md text-sm hover:bg-tpcBlue hover:text-white will-change-auto transition-all ease-in-out duration-150"
           >
             Book Now
           </a>
           <a
-            target="_blank"
-            href=""
-            className="px-6 py-2 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100 text-sm"
+            href="#About"
+            className="px-6 py-2 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100 text-sm hover:bg-tpcDarkBlue hover:border-tpcDarkBlue hover:font-semibold will-change-auto transition-all ease-in-out duration-150"
           >
             About Us
           </a>

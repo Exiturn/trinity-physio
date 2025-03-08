@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
         <a
           target="_blank"
           href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
-          className="hidden md:block px-6 py-2 bg-white text-black font-semibold rounded-md"
+          className="hidden md:block px-6 py-2 bg-white text-black font-semibold rounded-md hover:bg-tpcBlue hover:text-white will-change-auto transition-all ease-in-out duration-150"
         >
           Book Now
         </a>

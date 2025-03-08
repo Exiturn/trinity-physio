@@ -19,7 +19,7 @@ const FindUs = () => {
             <a
               target="_blank"
               href="https://trinityphysiotherapyclinic.uk2.cliniko.com/bookings"
-              className="px-6 py-2 bg-tpcBlue text-white font-semibold rounded-md text-sm w-[110px] text-center mt-2"
+              className="px-6 py-2 bg-tpcBlue text-white font-semibold rounded-md text-sm w-[110px] text-center mt-2 transition-all ease-in-out duration-150 hover:bg-tpcDarkBlue"
             >
               Book Now
             </a>

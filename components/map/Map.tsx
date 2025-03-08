@@ -1,6 +1,11 @@
 "use client";
 import React from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  LoadScript,
+  Marker,
+  useJsApiLoader,
+} from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
@@ -14,14 +19,20 @@ const center = {
 };
 
 const GoogleMapComponent = () => {
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "",
+    libraries: ["geometry", "drawing"],
+  });
+
   return (
-    <LoadScript
-      googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ""}
-    >
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-        <Marker position={center} />
-      </GoogleMap>
-    </LoadScript>
+    <>
+      {isLoaded && (
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
+          <Marker position={center} />
+        </GoogleMap>
+      )}
+    </>
   );
 };
 

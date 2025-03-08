@@ -18,7 +18,7 @@ const About = () => {
         Meet our expert physiotherapists, dedicated to helping you move better
         with personalized, evidence-based care.
       </h2>
-      <div className="flex flex-col lg:flex-row gap-16 justify-center items-center w-full pt-10">
+      <div className="flex flex-col lg:flex-row gap-16 justify-center items-center w-full py-10">
         {expertCards.map((expert) => (
           <Card
             key={expert.name}
