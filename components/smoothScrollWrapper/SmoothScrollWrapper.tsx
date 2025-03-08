@@ -7,7 +7,7 @@ export default function SmoothScrollWrapper({
 }: {
   children: React.ReactNode;
 }) {
-  useLenis(({ scroll }) => {
+  useLenis(() => {
     // Optional: Add logic for scroll events
   });
 
