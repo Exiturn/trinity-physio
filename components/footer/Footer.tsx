@@ -1,5 +1,4 @@
 import React from "react";
-import MenuSvg from "../menuSvg/MenuSvg";
 import Link from "next/link";
 
 const Footer = () => {
@@ -25,7 +24,7 @@ const Footer = () => {
           Get In Touch
         </Link>
       </div>
-      <div className="w-full flex justify-between items-center mt-2 text-tpcGray text-[12px]">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center mt-2 text-tpcGray text-[10px] md:text-[12px]">
         <p>©Trinity Physiotherapy Clinic. All rights reserved.</p>
         <p>
           Designed & Developed by{" "}
