@@ -1,14 +1,14 @@
 import ContactForm from "@/components/contactForm/ContactForm";
+import Navbar from "@/components/navbar/Navbar";
 import FindUs from "@/components/find/FindUs";
-import Link from "next/link";
 
 const ContactPage = () => {
   return (
-    <div className="flex flex-col justify-center items-center relative py-10 w-full">
-      <button>
-        <Link href={"/"}>Home</Link>
-      </button>
-      <ContactForm />
+    <div className="flex flex-col justify-center items-center relative pb-10 pt-[20vh] w-full">
+      <Navbar />
+      <div className="px-4">
+        <ContactForm />
+      </div>
       <FindUs />
     </div>
   );

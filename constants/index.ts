@@ -38,23 +38,23 @@ type aboutCardT = {
 export const navItems: navItemsT[] = [
   {
     name: "Home",
-    href: "#Home",
+    href: "/#Home",
   },
   {
     name: "Services",
-    href: "#Services",
+    href: "/#Services",
   },
   {
     name: "Testimonials",
-    href: "#Reviews",
+    href: "/#Reviews",
   },
   {
     name: "About",
-    href: "#About",
+    href: "/#About",
   },
   {
     name: "Find Us",
-    href: "#Findus",
+    href: "/#Findus",
   },
 ];
 
