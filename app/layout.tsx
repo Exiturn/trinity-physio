@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Circle from "@/components/backgroundCircle/Circle";
 import SmoothScrollWrapper from "@/components/smoothScrollWrapper/SmoothScrollWrapper";
+import { Analytics } from "@vercel/analytics/next";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
@@ -29,6 +30,7 @@ export default function RootLayout({
         <SmoothScrollWrapper>
           <Toaster position="top-right" />
           {children}
+          <Analytics />
           <Circle />
         </SmoothScrollWrapper>
       </body>
