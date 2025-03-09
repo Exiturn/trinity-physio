@@ -20,7 +20,7 @@ export const send = async (emailFormData: z.infer<typeof formSchema>) => {
         firstName: emailFormData.firstName,
         lastName: emailFormData.lastName,
         message: emailFormData.message,
-      }),
+      }) as React.ReactNode,
     });
 
     if (error) {
