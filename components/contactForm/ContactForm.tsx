@@ -49,7 +49,7 @@ export default function ContactForm() {
       <CardHeader>
         <CardTitle>Contact Us</CardTitle>
         <CardDescription>
-          Fill out the form below and we`&apos;`ll get back to you as soon as
+          Fill out the form below and we&apos;ll get back to you as soon as
           possible
         </CardDescription>
       </CardHeader>
