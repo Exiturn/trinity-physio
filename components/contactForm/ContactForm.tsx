@@ -14,6 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 import {
   Form,
   FormControl,
@@ -37,17 +38,24 @@ export default function ContactForm() {
     },
   });
 
+  const { reset } = form;
+
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    send(values);
-  }
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    try {
+      await send(values); // Call the send function
+      toast.success("Message sent successfully!"); // Show success toast
+      reset(); // Reset form fields
+    } catch (error) {
+      toast.error("Failed to send message. Please try again."); // Show error toast
+      console.error(error);
+    }
+  };
 
   return (
-    <Card className="mx-auto max-w-md bg-tpcNav border-none">
+    <Card className="mx-auto max-w-md bg-tpcNav border-none text-[16px]">
       <CardHeader>
-        <CardTitle>Contact Us</CardTitle>
+        <CardTitle className="text-4xl">Contact Us</CardTitle>
         <CardDescription>
           Fill out the form below and we&apos;ll get back to you as soon as
           possible
@@ -63,7 +71,7 @@ export default function ContactForm() {
                   name="firstName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>First Name</FormLabel>
+                      <FormLabel className="text-[16px]">First Name</FormLabel>
                       <FormControl>
                         <Input placeholder="Your first name" {...field} />
                       </FormControl>
@@ -78,7 +86,7 @@ export default function ContactForm() {
                   name="lastName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Last Name</FormLabel>
+                      <FormLabel className="text-[16px]">Last Name</FormLabel>
                       <FormControl>
                         <Input placeholder="Your last name" {...field} />
                       </FormControl>
@@ -94,7 +102,7 @@ export default function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="text-[16px]">Email</FormLabel>
                     <FormControl>
                       <Input placeholder="Your Email" {...field} />
                     </FormControl>
@@ -109,7 +117,7 @@ export default function ContactForm() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel className="text-[16px]">Message</FormLabel>
                     <FormControl>
                       <Textarea
                         id="message"
@@ -125,7 +133,7 @@ export default function ContactForm() {
             </div>
             <Button
               type="submit"
-              className="ml-auto bg-tpcBlue transition-all ease-in-out duration-150 hover:bg-tpcDarkBlue"
+              className="ml-auto bg-tpcBlue transition-all ease-in-out duration-150 hover:bg-tpcDarkBlue text-[16px]"
             >
               Submit
             </Button>

@@ -10,7 +10,7 @@ const FindUs = () => {
       <h1 className="text-white leading-[1em] text-[42px] lg:text-[56px] xl:text-[64px] text-wrap w-full md:w-[70vw] lg:w-[70vw] md:text-center tracking-tighter transform">
         How to find us.
       </h1>
-      <div className="w-full flex flex-col md:flex-row justify-between mt-10">
+      <div className="w-full flex flex-col md:flex-row justify-between mt-10 gap-16">
         <div id="left-column" className="w-full md:w-[40vw]">
           <div className="flex flex-col">
             <h2 className="font-medium pb-4">Contact Information</h2>
